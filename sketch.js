@@ -31,17 +31,17 @@ function setup() {
 
 function draw() {
   background(0);
- 
-  dustbin.display();
   paper.display();
+  dustbin.display();
+  
   ground.display();
 }
 
 function keyPressed(){
 	if(keyCode == UP_ARROW){
 		Matter.Body.applyForce(paper.body,paper.body.position,{
-		x:1000,
-		y:600
+		x:85,
+		y:-85
 		});
 	}
 }
